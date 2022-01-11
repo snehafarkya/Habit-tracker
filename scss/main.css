@@ -1,0 +1,150 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+body {
+  background-image: url("https://besthqwallpapers.com/Uploads/3-1-2020/117928/thumb2-purple-vintage-texture-vintage-background-purple-retro-texture-retro-ornament-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body .container h1 {
+  color: white;
+}
+
+body .add-habit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid black;
+}
+
+body .add-habit input[type=text], body .add-habit [type=number] {
+  padding: 10px;
+  margin: 8px;
+  outline: 0;
+  height: 2em;
+  width: 22em;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  border-radius: 12px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+body .add-habit input[type=text]:hover, body .add-habit [type=number]:hover {
+  border: white 2px solid;
+  background-color: rgba(119, 136, 153, 0.315);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .frequency {
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3em;
+  color: white;
+  gap: 1em;
+}
+
+body .frequency #timeframe {
+  border-radius: 12px;
+  padding: 0.4em;
+}
+
+body #submit {
+  width: 9em;
+  padding: 6px;
+  margin: 1em;
+  border-radius: 6px;
+  border: transparent solid;
+  background-color: purple;
+  color: white;
+}
+
+body #submit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  border: white 2px solid;
+}
+
+body ul {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+
+body ul li {
+  list-style: none;
+  margin-top: 2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white;
+}
+
+body .delete {
+  margin: auto 2em;
+  font-size: 1em;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+body .habits input + label span {
+  font-weight: 200;
+  font-size: 1.1em;
+  margin: 2em;
+}
+
+body .habits input:checked + label {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+body footer {
+  position: static;
+  margin-top: 100px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
