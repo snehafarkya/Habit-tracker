@@ -123,6 +123,12 @@ body ul li {
   color: white;
 }
 
+@media screen and (max-width: 400px) {
+  body ul li {
+    font-size: 0.8em;
+  }
+}
+
 body .delete {
   margin: auto 2em;
   font-size: 1em;
@@ -131,10 +137,24 @@ body .delete {
   border-radius: 6px;
 }
 
+@media screen and (max-width: 400px) {
+  body .delete {
+    padding: 3px;
+    font-size: 0.8em;
+  }
+}
+
 body .habits input + label span {
   font-weight: 200;
   font-size: 1.1em;
   margin: 2em;
+}
+
+@media screen and (max-width: 400px) {
+  body .habits input + label span {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+  }
 }
 
 body .habits input:checked + label {

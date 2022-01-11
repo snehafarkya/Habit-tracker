@@ -89,6 +89,10 @@ background-size: cover;
            font-size: 1.2em;
            font-weight: 500;
            color: white;
+
+           @media screen and (max-width:400px) {
+               font-size: 0.8em;
+           }
        }
    }
    .delete{
@@ -97,12 +101,21 @@ background-size: cover;
        padding: 5px 8px;
        border: none;
        border-radius: 6px;
+
+       @media screen and (max-width:400px) {
+           padding: 3px;
+           font-size: 0.8em;
+       }
    }
    .habits input + label span {
     font-weight: 200;
     font-size: 1.1em;
     margin: 2em;
    
+    @media screen and (max-width:400px) {
+        margin-left: 0.5em;
+        font-size: 0.8em;
+    }
   }
  
    .habits input:checked + label {
