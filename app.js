@@ -32,7 +32,7 @@ function listHabits(habit = [], habitsList) {
             <label for="habit${i}"><span>${habit.reps}/${habit.totalCounts} ${
         habit.timeframe
       }</span> ${habit.text}</label>
-        <button class="delete" data-index=${i} id="delete${i}">Delete</button>
+        <button onclick="sound()" class="delete" data-index=${i} id="delete${i}">Delete</button>
         </li>
         `;
     })
@@ -68,7 +68,14 @@ function deleteHabit(e) {
   listHabits(habits, habitsList);
   localStorage.setItem("habits", JSON.stringify(habits));
 }
-
+function music(){
+    var newmusic = new Audio('musicc.wav');
+    newmusic.play();
+    }
+    function sound(){
+        var newsound = new Audio('musicdelete.wav');
+        newsound.play();
+        }
 addHabits.addEventListener("submit", addHabit);
 habitsList.addEventListener("click", toggleCompleted);
 habitsList.addEventListener("click", deleteHabit);
